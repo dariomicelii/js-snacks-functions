@@ -1,10 +1,13 @@
-/* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array contenente solo le parole che iniziano con quella lettera */
+/* Scrivi una funzione che accetti un'array di stringhe e una lettera e restituisca un array 
+contenente solo le parole che iniziano con quella lettera */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
-
-
+letter = prompt("Inserisci una lettera per cercare i nomi all'interno della lista:");
+newArray = [];
 // Dichiara la funzione qui.
-
+function nameSearch (names, letter) {
+    
+}
 
 // Invoca la funzione qui e stampa il risultato in console
 
