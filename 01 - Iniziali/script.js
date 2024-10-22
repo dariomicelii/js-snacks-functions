@@ -5,18 +5,21 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 console.log(names)
 
 // Dichiara la funzione qui.
+function getFirstLetter(words){
+    const result = [];
+    words.forEach((word) => {
+        const firstLetter = word[0];
+        result.push(firstLetter);
+    });
+    return result
+}
 
-function iniziali(names) {
-let newArray = [];
-cont = 0
-while(cont < names.length) {
-    currentName = names[i];
-    console.log(currentName)
-}
-}
+
+const result = getFirstLetter(names)
+console.log(result)
 
 // Invoca la funzione qui e stampa il risultato in console
 
-iniziali(names)
+
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]
