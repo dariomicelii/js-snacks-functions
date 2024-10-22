@@ -2,12 +2,20 @@
 contenente solo le parole che iniziano con quella lettera */
 
 const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
-letter = prompt("Inserisci una lettera per cercare i nomi all'interno della lista:");
-newArray = [];
+
 // Dichiara la funzione qui.
-function nameSearch (names, letter) {
-    
-}
+const filterWordsByInitials = (words, initial) => {
+    const result = [];
+
+    words.forEach((word) => {
+        if(word[0] === initial){
+            result.push(word);
+        }
+    });
+    return result
+};
+
+console.log(filterWordsByInitials(names, 'A'));
 
 // Invoca la funzione qui e stampa il risultato in console
 
